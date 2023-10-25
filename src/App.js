@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ChildComponent from './components/ChildComponent';
+import CoffeeComponent from './components/CoffeesComponent';
+import DateComponent from './components/DateComponent';
+
 
 function App() {
+  // all javascript
+  
+  //in return only jsx
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CoffeeComponent/>
+        <DateComponent />
+        <ChildComponent />
       </header>
     </div>
-  );
+  )
 }
 
 export default App;
